@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EditorStrings>
+  <PolyGroups ModuleName="NormalizedColorSensor">
+	<PolyGroup Name="NormalizedColorSensor" DisplayName="Normalized RGB by Vladimir" DisplayNamePrefix="NormalizedColorSensor">
+      <Parameter Name="Port" DisplayName="Port" >
+        <Description><![CDATA[<p>Context help for Port</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Red_min" DisplayName="Red Minimum Raw Value" >
+        <Description><![CDATA[<p>Red Minimum Raw Value</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Red_max" DisplayName="Red Maximum Raw Value" >
+        <Description><![CDATA[<p>Red Maximum Raw Value</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Green_min" DisplayName="Green Minimum Raw Value" >
+        <Description><![CDATA[<p>Green Minimum Raw Value</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Green_max" DisplayName="Green Maximum Raw Value" >
+        <Description><![CDATA[<p>Green Maximum Raw Value</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Blue_min" DisplayName="Blue Minimum Raw Value" >
+        <Description><![CDATA[<p>Blue Minimum Raw Value</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Blue_max" DisplayName="Blue Maximum Raw Value" >
+        <Description><![CDATA[<p>Blue Maximum Raw Value</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Red" DisplayName="Red">
+        <Description><![CDATA[<p>Red component of RGB color</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Green" DisplayName="Green">
+        <Description><![CDATA[<p>Green component of RGB color</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Blue" DisplayName="Blue">
+        <Description><![CDATA[<p>Blue component of RGB color</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Hue" DisplayName="Hue Value">
+        <Description><![CDATA[<p>Hue component of HSVL color</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Lightness" DisplayName="Lightness Value">
+        <Description><![CDATA[<p>Lightness component of HSVL color</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Saturation" DisplayName="Saturation Value">
+        <Description><![CDATA[<p>Saturation component of HSVL color</p>]]></Description>
+      </Parameter>
+      <Parameter Name="Value" DisplayName="Brightness Value">
+        <Description><![CDATA[<p>Brightness component of HSVL color</p>]]></Description>
+      </Parameter>
+      <Block Mode="Configuration" DisplayName="Configure RGB Values">
+        <Description><![CDATA[<p>Configure minimum and maximum raw values for RGB</p>]]></Description>
+      </Block>
+      <Block Mode="RGB_Raw" DisplayName="Measure - RGB Raw color">
+        <Description><![CDATA[<p>Measure Raw RGB colors</p>]]></Description>
+      </Block>
+      <Block Mode="ReadHSV" DisplayName="Measure - HSV color">
+        <Description><![CDATA[<p>Measure HSV colors</p>]]></Description>
+      </Block>
+         <Category Name="RGB_Norm" DisplayName="Read Normal Value">
+            <Block Mode="RGB_Norm1" DisplayName="Port 1">
+               <Description><![CDATA[<p>ReadEV3ColNorm 1</p>]]></Description>
+            </Block>
+            <Block Mode="RGB_Norm2" DisplayName="Port 2">
+               <Description><![CDATA[<p>ReadEV3ColNorm 2</p>]]></Description>
+            </Block>
+            <Block Mode="RGB_Norm3" DisplayName="Port 3">
+               <Description><![CDATA[<p>ReadEV3ColNorm 3</p>]]></Description>
+            </Block>
+            <Block Mode="RGB_Norm4" DisplayName="Port 4">
+               <Description><![CDATA[<p>ReadEV3ColNorm 4</p>]]></Description>
+            </Block>
+         </Category>
+    </PolyGroup>
+  </PolyGroups>
+</EditorStrings>

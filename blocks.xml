@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EditorDefinitions>
+  <PolyGroups ModuleName="NormalizedColorSensor" ModuleVersion="1.0 by Vladimir">
+	<PolyGroup Name="NormalizedColorSensor" BlockFamily="Sensor">
+         <Parameter Name="Port" CompilerDirectives="OneInputPort" Direction="Input" DefaultValue="1.3" />
+	 <Parameter Name="Red_min" Identification="minimum.png" DataType="Single" Direction="Input" DefaultValue="0"/>
+	 <Parameter Name="Red_max" Identification="maximum.png" DataType="Single" Direction="Input" DefaultValue="100"/>
+	 <Parameter Name="Green_min" Identification="minimum.png" DataType="Single" Direction="Input" DefaultValue="0"/>
+	 <Parameter Name="Green_max" Identification="maximum.png" DataType="Single" Direction="Input" DefaultValue="100"/>
+	 <Parameter Name="Blue_min" Identification="minimum.png" DataType="Single" Direction="Input" DefaultValue="0"/>
+	 <Parameter Name="Blue_max" Identification="maximum.png" DataType="Single" Direction="Input" DefaultValue="100"/>
+         <Parameter Name="Red" Identification="Identification_Red.png" DataType="Single" Direction="Output" />
+         <Parameter Name="Green" Identification="Identification_Green.png" DataType="Single" Direction="Output" />
+         <Parameter Name="Blue" Identification="Identification_Blue.png" DataType="Single" Direction="Output" />
+	 <Parameter Name="Hue" Identification="Identification_H.png" DataType="Single" Direction="Output" />
+         <Parameter Name="Lightness" Identification="Identification_L.png" DataType="Single" Direction="Output" />
+         <Parameter Name="Saturation" Identification="Identification_S.png" DataType="Single" Direction="Output" />
+         <Parameter Name="Value" Identification="Identification_V.png" DataType="Single" Direction="Output" />
+         
+         <Hardware>
+          <NXTPlotColor>#ffff3132</NXTPlotColor>
+          <EV3PlotColor>#ff785028</EV3PlotColor>
+          <EV3AutoID>29</EV3AutoID>
+          <OtherAutoID>4</OtherAutoID>
+          <OtherAutoID>2</OtherAutoID>
+          <Direction>Input</Direction>
+          <DefaultPort>1.3</DefaultPort>
+         </Hardware>
+
+         <Block>
+          <Mode>Configuration</Mode>
+          <Reference Type="VILib" Name="rgb_config.vix" />          	
+	  <ParameterReference Name="Port" />
+          <ParameterReference Name="Red_min" />
+          <ParameterReference Name="Red_max" />
+          <ParameterReference Name="Green_min" />
+          <ParameterReference Name="Green_max" />
+          <ParameterReference Name="Blue_min" />
+          <ParameterReference Name="Blue_max" />
+          <PaletteInfo Weight="0.5" />
+         </Block>
+         <Block>
+          <Mode>RGB_Raw</Mode>
+          <Reference Type="VILib" Name="ColorSensorRGBValue.vix" />
+          <ParameterReference Name="Port" />
+          <ParameterReference Name="Red" />
+          <ParameterReference Name="Green" />
+          <ParameterReference Name="Blue" />
+         </Block>
+         <Block>
+          <Mode>ReadHSV</Mode>
+          <Reference Type="VILib" Name="OFDL_EV3Color_HSV.vix" />
+          <ParameterReference Name="Port" />
+          <ParameterReference Name="Hue" />
+          <ParameterReference Name="Saturation" />
+          <ParameterReference Name="Value" />
+          <ParameterReference Name="Lightness" />
+         </Block>
+	<Category Name="RGB_Norm">
+				<Block>
+					<Mode>RGB_Norm1</Mode>
+					<Reference Type="VILib" Name="RGB_1.vix" />
+					<ParameterReference Name="Red" />
+         	 			<ParameterReference Name="Green" />
+          				<ParameterReference Name="Blue" />
+				</Block>
+				<Block>
+					<Mode>RGB_Norm2</Mode>
+					<Reference Type="VILib" Name="RGB_2.vix" />
+					<ParameterReference Name="Red" />
+         	 			<ParameterReference Name="Green" />
+          				<ParameterReference Name="Blue" />
+				</Block>
+				<Block>
+					<Mode>RGB_Norm3</Mode>
+					<Reference Type="VILib" Name="RGB_3.vix" />
+					<ParameterReference Name="Red" />
+         	 			<ParameterReference Name="Green" />
+          				<ParameterReference Name="Blue" />
+				</Block>
+				<Block>
+					<Mode>RGB_Norm4</Mode>
+					<Reference Type="VILib" Name="RGB_4.vix" />
+					<ParameterReference Name="Red" />
+         	 			<ParameterReference Name="Green" />
+          				<ParameterReference Name="Blue" />
+				</Block>
+			</Category>
+    </PolyGroup>
+  </PolyGroups>
+</EditorDefinitions>
