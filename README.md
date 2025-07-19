@@ -1,5 +1,5 @@
 # EV3-RGBNormalize-Block
-![](https://ibb.co/6010YfpJ)
+![](https://photos.app.goo.gl/FfQA8CNg24HYTThPA)
 
 You can download ev3b file to import this block：[Latest Release](https://github.com/De-Velop/EV3-RGBNormalize-Block/releases/)
 
